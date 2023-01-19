@@ -61,7 +61,6 @@ h1 {
     line-height: 65px;
     letter-spacing: 5px;
     text-align: center;
-
 }
 
 h2 {
@@ -74,7 +73,6 @@ h2 {
     line-height: 34px;
     letter-spacing: 10px;
     text-align: center;
-
 }
 
 .content {
@@ -105,4 +103,54 @@ h2 {
     letter-spacing: -0.5px;
     text-align: center;
     margin-top: 25px;
+}
+
+/*dropdown*/
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content a{
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a:hover {
+    color: blueviolet;
+    font-size: 16px;
+}
+
+.menu button {
+    padding: 30px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.menu button::after {
+    content: "";
+    background-image: url(/images/arrow.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 38%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
 }
